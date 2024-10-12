@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gera número LotoFácil</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="container-child">
+      <h1>GERADOR DE NÚMEROS <span class="lotofacil">LOTOFÁCIL</span></h1>
+      <button class="btn-count btn">Gerar Números</button>
+      <button class="btn-delete btn">Apagar Números</button>
+      <div style="display: flex;" class="div-elements">
+        <p class="place-count" style="gap: 10px; margin-right: 5px">Não há números gerados.
+      </div>
+      </p>
+      <p>Números Pares: <span class="number-par"></span></p>
+      <p>Números Impares: <span class="number-impar"></span></p>
+    </div>
+    <div class="container-child" id="sequencias">
+      <h3>Últimas 5 sequências geradas:</h3>
+      <p id="sequencia-1" class="color-sequencia"></p>
+      <p id="sequencia-2" class="color-sequencia"></p>
+      <p id="sequencia-3" class="color-sequencia"></p>
+      <p id="sequencia-4" class="color-sequencia"></p>
+      <p id="sequencia-5" class="color-sequencia"></p>
+      <button class="btn apagar-sequencias">Apagar sequencias</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

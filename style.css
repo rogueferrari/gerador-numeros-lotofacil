@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+}
+
+.container-child {
+  margin: 0 auto;
+}
+
+.color-sequencia {
+  background-color: rgba(62, 174, 194, 0.808);
+  padding: 2px;
+  color: rgba(66, 121, 184, 0.952);
+  width: 280px;
+}
+
+.btn {
+  background-color: #e0f0ff; 
+  color: #333; 
+  padding: 10px 20px; 
+  font-size: 16px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: #b3e0ff; /* Azul um pouco mais escuro ao passar o mouse */
+}
+
+.lotofacil {
+  color: #6abb19;
+  background-color: #628d36f3;
+  padding: 0px 2px 0px 2px;
+}
+
+@media (max-width: 710px) {
+  .container {
+    flex-direction: column;
+  }
+  h1{
+    font-size: 18px;
+  }
+}
