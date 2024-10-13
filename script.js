@@ -69,7 +69,7 @@ function handleCount() {
     pElement.classList.add('element-child');
     pElement.innerText = number;
 
-    //verifica se o número é par
+    //verifica se o número é par e aplica styles
     if (number % 2 === 0) {
       pElement.style.color = '#8d4242';
       pElement.style.backgroundColor = '#bb5454b7';
@@ -94,10 +94,7 @@ function handleCount() {
   let quartaSequencia = arrTest.slice(45, 60).join(' ');
   let quintaSequencia = arrTest.slice(60, 75).join(' ');
 
-  console.log('primeira sequencia ', primeiraSequencia);
-  console.log('segunda sequencia ', segundaSequencia);
-  console.log(arrTest);
-
+  //adiciona sequências nos respectivos campos
   sequenciaUm = document.querySelector('#sequencia-1');
   sequenciaUm.innerText = primeiraSequencia;
 
@@ -118,6 +115,7 @@ function handleCount() {
   numberImparHTML.innerText = numberImpar;
 }
 
+//função para remover sequências
 function apagarSequencias() {
   sequenciaUm.innerText = '';
   sequenciaDois.innerText = '';
@@ -133,7 +131,8 @@ buttonCount.addEventListener('click', () => {
   handleCount(); // Atualiza a exibição
 });
 
+//limpa sequencias
 apagarSequenciasBtn.addEventListener('click', apagarSequencias);
 
-//limpa dados
+//limpa número gerado
 buttonDelete.addEventListener('click', clearNumberGenerated);
