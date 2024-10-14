@@ -42,10 +42,8 @@ function generateNumbers() {
     }
   }
 
-  numberParHTML.style = 'color: #8d4242; background-color: #bb5454b7';
-  numberImparHTML.style = 'color: #1ca11c; background-color: #2eaa2ea4';
-  numberParHTML.style.padding = '1px 2px';
-  numberImparHTML.style.padding = '1px 2px';
+  numberParHTML.classList.add('style-par');
+  numberImparHTML.classList.add('style-impar');
 }
 
 // Função para limpar os dados gerados
@@ -71,17 +69,12 @@ function handleCount() {
 
     //verifica se o número é par e aplica styles
     if (number % 2 === 0) {
-      pElement.style.color = '#8d4242';
-      pElement.style.backgroundColor = '#bb5454b7';
+      pElement.classList.add('style-par');
 
       //aplica esses styles caso seja impar
     } else {
-      pElement.style.color = '#1ca11c';
-      pElement.style.backgroundColor = '#2eaa2ea4';
+      pElement.classList.add('style-impar');
     }
-
-    pElement.style.marginRight = '3px';
-    pElement.style.padding = '1px 2px';
 
     //adiciona elemento criado nessa div
     divElements.appendChild(pElement);

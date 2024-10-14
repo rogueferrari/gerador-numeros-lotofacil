@@ -33,6 +33,20 @@ li {
   letter-spacing: 1.5px;
 }
 
+.style-par {
+  color: #8d4242;
+  background-color: #bb5454b7;
+  padding: 1px 2px;
+  margin-right: 3px;
+}
+
+.style-impar {
+  color: #1ca11c; 
+  background-color: #2eaa2ea4;
+  padding: 1px 2px;
+  margin-right: 3px;
+}
+
 .color-sequencia {
   background-color: rgba(62, 174, 194, 0.808);
   padding: 2px;
