@@ -14,7 +14,7 @@
 <body>
   <div class="container">
     <div class="container-child">
-      <h1>GERADOR DE NÚMEROS <span class="lotofacil">LOTOFÁCIL</span></h1>
+      <h1 class="titulos">GERADOR DE NÚMEROS <span class="lotofacil">LOTOFÁCIL</span></h1>
       <button class="btn-count btn">Gerar Números</button>
       <button class="btn-delete btn">Apagar Números</button>
       <div style="display: flex;" class="div-elements">
@@ -34,8 +34,22 @@
       <button class="btn apagar-sequencias">Apagar sequencias</button>
     </div>
   </div>
+  <div class="container-grid">
+    <div class="container-child-grid" id="div-sorteios">
+      <h2 class="titulos">ÚLTIMO SORTEIO:</h2>
+      <h3>Concurso: <span id="concurso">concurso vai aqui</span></h3>
+      <h3>Data: <span id="data-concurso"></span></h3>
+      <h3>Dezenas Sorteadas: <span id="dezenas-sorteadas">dezenas vao aqui</span></h3>
+
+    </div>
+    <div class="container-child" id="premiacoes">
+      <h3 class="titulos">PREMIAÇÕES: </h3>
+      <ul id="premiacoes-itens"></ul>
+    </div>
+  </div>
 
   <script src="script.js"></script>
+  <script src="api/api.js"></script>
 </body>
 
 </html>
